@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="541.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.informesbbdd.MainController">
+   <children>
+      <Text id="header" strokeType="OUTSIDE" strokeWidth="0.0" text="Generador de Informes" textAlignment="CENTER" wrappingWidth="547.13671875">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Text>
+      <AnchorPane prefHeight="257.0">
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+         <children>
+            <Button layoutX="146.0" layoutY="37.0" mnemonicParsing="false" onAction="#handlerClientes" prefHeight="50.0" prefWidth="250.0" text="Informe Clientes" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Button layoutX="146.0" layoutY="129.0" mnemonicParsing="false" onAction="#handlerArtistas" prefHeight="50.0" prefWidth="250.0" text="Informe Artistas">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Button fx:id="btnCerrar" layoutX="425.0" layoutY="222.0" mnemonicParsing="false" onAction="#handlerCerrar" prefHeight="25.0" prefWidth="76.0" text="Cerrar">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
